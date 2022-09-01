@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 import sys
-import os
+import os, io
 from pathlib import Path
 import subprocess
+import signal
+import time
 
 #Use the script to find the micropython device, and then remove any whitespace to just isolate the string
 devPath = os.popen("./devFinder.sh | grep MicroPython | awk '{print $1}'").read().strip()
@@ -31,3 +33,11 @@ cmd = 'ampy --port %s run -n %s'% (devPath, file)
 stream = os.popen(cmd) #Execute the command in the command line
 
 stream.close() #Close the stream to be on the safe side
+
+try:
+
+	flag_index = sys.argv[sys.argv.index('-m')+1]
+	import monitor.py
+
+except Exception as e:
+	sys.exit(0)
