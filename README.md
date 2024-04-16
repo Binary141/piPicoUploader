@@ -16,4 +16,4 @@ Optionally you can use the `-m` flag to monitor the output of the pico, ex. `./u
 
 The `test.py` file is just to make sure that the uploader is working correctly, and just blinks the onboard led of the pico.
 
-![usage gif](https://github.com/Binary141/piPicoUploader/master/blob/usage.gif)
+![usage gif](https://github.com/Binary141/piPicoUploader/blob/main/usage.gif)
