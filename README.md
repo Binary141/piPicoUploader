@@ -13,3 +13,7 @@ After adding yourself to that group you may have to either log out and log back 
 To use this, simply make the python file executable using `chmod +x uploader.py`, and run `./uploader.py -f <file_name>` in the command line. Then it will take the file and upload it to the device that `devFinder.sh` finds.
 
 Optionally you can use the `-m` flag to monitor the output of the pico, ex. `./uploader.py -m -f <filename>` and it will upload the given file to the Pico and print out the output into the terminal window. You can optionally use the `monitor.py` file to simply just monitor the output without uploading any code, ex `./monitor.py`
+
+The `test.py` file is just to make sure that the uploader is working correctly, and just blinks the onboard led of the pico.
+
+![usage gif](https://github.com/Binary141/piPicoUploader/master/blob/usage.gif)
